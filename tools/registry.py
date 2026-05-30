@@ -1,13 +1,13 @@
-from tools.tools import *
+from tools.tools import list_add, list_total, list_list, list_remove
 
 TOOLS = {
-    "cart_add": cart_add,
-    "cart_total": cart_total,
-    "cart_list": cart_list,
+    "list_add": list_add,
+    "list_list": list_list,
+    "list_remove": list_remove,
 }
 
 TOOL_DESCRIPTIONS = {
-    "cart_add": "Add an item to the cart. args: item:str, cost:int",
-    "cart_total": "Return total cost of all items in cart. args: none",
-    "cart_list": "Return all items currently in cart. args: none",
+    "list_add": "Add an item to the list. args: item:str, amount:int",
+    "list_list": "Return all items in the list. args: none",
+    "list_remove": "Remove an item from the list by name. args: item_name:str",
 }
